@@ -10,11 +10,13 @@
   lich numerisch ist und aus genau 14 Ziffern besteht.
 - In jedem anderen Fall wird die Fehlermeldung „Karte nicht erkannt" ausgegeben.
 
+## Lösung der Aufgabe
 ![Aufgabe 1](https://github.com/x10Lukas/Uebung-Klassenarbeit-Nr.3/assets/65921256/01faf1dd-7897-4cec-a08a-cd822c886aca)
 
 ## Aufgabe 2:
 > Ihre Aufgabe ist es, ein programm in C# zu schreiben, dass alle Zahlen von 0 bis 100 addiert, die durch 3 oder 5 teilbar sind und das Ergebnis am Ende ausgibt.
 
+## Lösung der Aufgabe
 ```csharp
 int sum = 0;
 
@@ -45,7 +47,7 @@ for (int i = 0; i < ez.Length - 1; i++)
 }
 ```
 
-**Lösung:**
+## Lösung der Aufgabe
 ```csharp
 int[] ez = { 45, 10, 15, 4 };
 
@@ -61,5 +63,93 @@ for (int i = 0; i < ez.Length - 1; i++)
 foreach (int value in ez)
 {
     Console.WriteLine(value);
+}
+```
+
+## Aufgabe 4:
+> Für einen Geometrierechner soll die Methode „BerechneFlaeche" implementiert werden.
+> Analysieren Sie folgenden Code und konstruieren Sie eine Methodenüberladung, so dass das Programm funktionsfähig ist.
+
+```
+// Methode für Kreis
+// pi = Math.PI
+
+
+// Methode für Rechteck
+
+
+// Methode für Dreieck
+
+
+Console. WriteLine("Fläche des Kreises: " + BerechneFlaeche(5));
+Console.WriteLine("Fläche des Rechtecks: " +. BerechneFlaeche(4, 6));
+Console.WriteLine("Fläche des Dreiecks: " + BerechneFlaeche(4, 6, true));
+```
+
+## Lösung der Aufgabe
+```csharp
+class Program
+{
+    public class Geometrierechner
+    {
+        public double BerechneFlaeche(double radius)
+        {
+            return Math.PI * radius * radius;
+        }
+        public double BerechneFlaeche(double laenge, double breite)
+        {
+            return laenge * breite;
+        }
+
+        public double BerechneFlaeche(double basis, double hoehe, bool istDreieck)
+        {
+            if (istDreieck)
+            {
+                return 0.5 * basis * hoehe;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+    }
+    static void Main()
+    {
+        Geometrierechner rechner = new Geometrierechner();
+        Console.WriteLine("Fläche des Kreises: " + rechner.BerechneFlaeche(5));
+        Console.WriteLine("Fläche des Rechtecks: " + rechner.BerechneFlaeche(4, 6));
+        Console.WriteLine("Fläche des Dreiecks: " + rechner.BerechneFlaeche(4, 6, true));
+    }
+}
+```
+
+## Aufgabe 5: 
+> Erstellen sie mit Hilfe von zwei for-Schleifen ein 5x5 großes Schachbrettmuster aus Rauten.
+```
+#####
+#####
+#####
+#####
+#####
+```
+
+## Lösung der Aufgabe
+```csharp
+int size = 5;
+
+for (int i = 0; i < size; i++)
+{
+    for (int j = 0; j < size; j++)
+    {
+        if ((i + j) % 2 == 0)
+        {
+            Console.Write("#");
+        }
+        else
+        {
+            Console.Write("#");
+        }
+    }
+    Console.WriteLine();
 }
 ```
