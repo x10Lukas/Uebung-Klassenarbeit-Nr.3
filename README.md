@@ -6,8 +6,7 @@
 
 **Anforderungen:**
 - Das Programm liest die Kreditkartennummer vom Benutzer ein.
-- Das Programm gibt die Erfolgsmeldung „Karte erkannt" aus, wenn die Eingabe ausschließ
-  lich numerisch ist und aus genau 14 Ziffern besteht.
+- Das Programm gibt die Erfolgsmeldung „Karte erkannt" aus, wenn die Eingabe ausschließlich numerisch ist und aus genau 14 Ziffern besteht.
 - In jedem anderen Fall wird die Fehlermeldung „Karte nicht erkannt" ausgegeben.
 
 ## Lösung der Aufgabe
