@@ -98,9 +98,9 @@ double kreisFlaeche = Math.PI * kreisRadius * kreisRadius;
 double rechteckFlaeche = rechteckLaenge * rechteckBreite;
 double dreieckFlaeche = istDreieck ? 0.5 * dreieckBasis * dreieckHoehe : 0;
 
-Console.WriteLine("Fläche des Kreises: " + kreisFlaeche);
-Console.WriteLine("Fläche des Rechtecks: " + rechteckFlaeche);
-Console.WriteLine("Fläche des Dreiecks: " + dreieckFlaeche);
+Console.WriteLine("Fläche des Kreises: {kreisFlaeche}");
+Console.WriteLine("Fläche des Rechtecks: {rechteckFlaeche}");
+Console.WriteLine("Fläche des Dreiecks: {dreieckFlaeche}");
 ```
 
 ## Aufgabe 5: 
