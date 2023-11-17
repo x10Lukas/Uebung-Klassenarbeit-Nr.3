@@ -106,11 +106,11 @@ Console.WriteLine("Fläche des Dreiecks: {dreieckFlaeche}");
 ## Aufgabe 5: 
 > Erstellen Sie mit Hilfe von zwei for-Schleifen ein 5x5 großes Schachbrettmuster aus Rauten.
 ```
-#####
-#####
-#####
-#####
-#####
+# # #
+ # #
+# # #
+ # #
+# # #
 ```
 
 ## Lösung der Aufgabe
